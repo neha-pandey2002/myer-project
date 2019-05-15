@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<!-- saved from url=(0064)https://glitch.com/edit/#!/enthusiastic-guppy?path=style.css:1:0 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon.ico?v=3" type="image/x-icon">
+  <link id="apple-touch-icon" rel="apple-touch-icon" sizes="180x180" href="https://glitch.com/edit/apple-touch-icon.png?v=3">
+  <link id="oembed" rel="alternate" type="application/json+oembed" href="https://api.glitch.com/projects/enthusiastic-guppy/oembed" title="enthusiastic-guppy oembed link">
+  <link rel="stylesheet" type="text/css" href="./assets – enthusiastic-guppy_files/3a8e55c6-b1f3-4659-99eb-125ae72bd084.css">
+  
+  <link class="theme" type="text/css" href="./assets – enthusiastic-guppy_files/cosmos.version.207f8fb4ada85707d61d.css">
+  
+  <link class="theme" rel="stylesheet" type="text/css" href="./assets – enthusiastic-guppy_files/sugar.version.14e9cba8119368be7759.css">
+  
+
+  <script src="./assets – enthusiastic-guppy_files/jsx.js.download"></script><script async="" src="./assets – enthusiastic-guppy_files/linting.version.42f57c7191838cded86352acb7bf8fb4.min.js.download"></script><script src="./assets – enthusiastic-guppy_files/markdown.js.download"></script><script type="text/javascript" async="" src="./assets – enthusiastic-guppy_files/w.js.download"></script><script src="./assets – enthusiastic-guppy_files/css.js.download"></script><script src="./assets – enthusiastic-guppy_files/javascript.js.download"></script><script src="./assets – enthusiastic-guppy_files/xml.js.download"></script><script src="./assets – enthusiastic-guppy_files/htmlmixed.js.download"></script><script type="text/javascript" async="" src="./assets – enthusiastic-guppy_files/analytics.min.js.download"></script><script>
+    (function () {
+      try {
+        var path = document.location.hash.split("?")[0].split("/");
+        var domain = path[1];
+
+        var NOT_DOMAINS = [
+          "new-project",
+          "sign-in",
+          "facebook",
+          "sign-out",
+          "sign-up",
+          "email-login"
+        ];
+
+        if (domain.length === 0 || path.length !== 2 || NOT_DOMAINS.includes(domain)) {
+          return;
+        }
+
+        (new Image()).src = "//api." + document.location.host + "/" + domain + "/preempt";
+      } catch (e) { }
+    })()
+  </script>
+
+  <meta name="linting-version" content="42f57c7191838cded86352acb7bf8fb4">
+  <meta http-equiv="Content-Security-Policy" content="
+    default-src
+      &#39;self&#39;;
+    connect-src
+      &#39;self&#39;
+      http://localhost:8000
+      http://localhost:8001
+      ws://localhost:8001
+      api.glitch.com api.glitch.development api.staging.glitch.com
+      wss://api.glitch.com wss://api.glitch.development wss://api.staging.glitch.com wss://glitch.development
+      https://*.woopra.com
+      api.segment.io
+      api.github.com
+      libraries.io
+      s3.amazonaws.com
+      https://securetoken.googleapis.com
+      https://www.googleapis.com;
+    font-src
+      cloud.webtype.com;
+    frame-src
+      https://*.glitch.me https://*.glitch.staging.me https://*.glitch.development
+      https://accounts.google.com
+      https://content-firebase.googleapis.com/
+      blob:
+      data:
+      &#39;self&#39;;
+    img-src
+      http://localhost:8000
+      https://*
+      blob:
+      data:;
+    media-src
+      http://localhost:8000
+      https://*
+      blob:
+      data:;
+    object-src
+      blob:
+      data:
+      &#39;self&#39;;
+    script-src
+      &#39;self&#39;
+      http://cdn.segment.com
+      http://*.woopra.com
+      
+      https://apis.google.com
+      https://cdnjs.cloudflare.com
+      https://cdn.segment.com
+      https://ajax.googleapis.com
+      https://*.woopra.com
+      &#39;sha256-aROmP5KBVON8dHdF7kTobxNwhI67hJuBpk+jNh/jbM4=&#39;
+      &#39;sha256-lIXJkTrfgeKmujhwsIkqzNbMkplZdPFm1ERXsf46uOw=&#39;
+      &#39;sha256-+4l9lhP1UV/0AkyBaWekYrPjOAwL8g5JIOD76yrrOHE=&#39;
+      &#39;sha256-To0Iwo79L42agXa29pvaAn64gM4rwT1BflbRPGdqcUg=&#39;;
+    style-src
+      &#39;self&#39;
+      &#39;unsafe-inline&#39;
+      https://cloud.webtype.com;
+  ">
+
+  <title>assets – enthusiastic-guppy</title>
+  <noscript>
+    <title>Glitch</title>
+  </noscript>
+
+  <meta name="description" content="Combining automated deployment, instant hosting &amp; collaborative editing, Glitch gets you straight to coding so you can build full-stack web apps, fast">
+  <meta name="keywords" content="developer, javascript, nodejs, editor, ide, development, online, web, code editor, html, css">
+
+  <!-- facebook open graph tags -->
+  <meta name="og:type" content="website">
+  <meta name="og:url" content="https://glitch.com">
+  <meta name="og:title" content="Glitch">
+  <meta name="og:description" content="Combining automated deployment, instant hosting &amp; collaborative editing, Glitch gets you straight to coding so you can build full-stack web apps, fast">
+  <meta name="og:image" content="https://glitch.com/edit/images/logos/glitch/social-card@2x.png">
+  <!-- twitter card tags (stacks with og: tags) -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@glitch">
+  <meta name="twitter:title" content="Glitch">
+  <meta name="twitter:description" content="Combining automated deployment, instant hosting &amp; collaborative editing, Glitch gets you straight to coding so you can build full-stack web apps, fast">
+  <meta name="twitter:image" content="https://glitch.com/edit/images/logos/glitch/social-card@2x.png">
+  <meta name="twitter:image:alt" content="Glitch Logo">
+  <meta name="twitter:url" content="https://glitch.com">
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <script>
+    if (!window.Promise) document.write('<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.35.0/es6-shim.min.js"><\/script>');
+  </script>
+  <script>
+    !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="4.0.0"; }}();
+  </script>
+
+</head>
+<body>
+  <noscript>
+    <h1>
+      To use Glitch, please enable JavaScript
+    </h1>
+  </noscript>
+
+  <script src="./assets – enthusiastic-guppy_files/jquery.min.js.download"></script>
+  <script>
+    if (typeof jQuery === 'undefined') document.write('<script type="text/javascript" src="./jquery-3.1.1.min.js"><\/script>');
+  </script>
+  <script src="./assets – enthusiastic-guppy_files/index.version.1bfe238503417b656fdd.js.download"></script><div id="application" class=""><header class=""><nav><div id="header-project" class="header-project nav-item opens-pop-over" data-tooltip="Project options" data-tooltip-project-pop="true"><div class="context"><span class="project-name-loader hidden"><span><div class="loader" data-testid="loader"><div class="moon"></div><div class="earth"></div><div class="asteroid"></div><div class="asteroid-dust"></div></div></span></span><img class="project-avatar-image" src="./assets – enthusiastic-guppy_files/dd04c617-bbf6-44b5-a9ee-8b52fb5132be.png"><span class="project-name">enthusiastic-guppy</span></div><span class="down-arrow icon"></span></div><div class="show-app-wrapper"><div id="show-app" class="show-app icon nav-item opens-pop-over" data-tooltip="Your app" data-app-url="https://enthusiastic-guppy.glitch.me"><span class="show-app-icon icon"></span><span class="show-text">Show</span><span class="down-arrow icon"></span></div><dialog class="pop-over show-app-pop hidden"><section class="actions"><div class="show-app-pop-button-container"><a id="show-app-new-window" class="show-app-pop-button" rel="noopener" target="_blank" tabindex="1" href="https://enthusiastic-guppy.glitch.me/"><div class="show-app-pop-button-image show-app-pop-image-live-app"></div><div class="show-app-pop-button-title">In a New Window
+</div></a><div class="show-app-pop-button" tabindex="0"><div class="show-app-pop-button-image show-app-pop-image-editor-preview"></div><div class="show-app-pop-button-title">Next to The Code
+</div></div></div></section></dialog></div><div class="project-search-wrapper"><input id="project-search-input" class="search-input opens-pop-over" type="text" name="search" autocomplete="off" placeholder="style.css"><dialog id="project-search-pop" class="pop-over project-search-pop hidden"><section class="actions results-list"><div class="loader-ellipses hidden"></div><ul class="results"><span class="style"><li class="result" tabindex="0" data-path="style.css"><div class="result-tip">recent
+</div><div class="result-name"><span>style.css</span></div><div class="result-description">style.css</div></li></span><span class="logic"><li class="result" tabindex="0" data-path="script.js"><div class="result-tip">recent
+</div><div class="result-name"><span>script.js</span></div><div class="result-description">script.js</div></li></span><span class="view"><li class="result" tabindex="0" data-path="index.html"><div class="result-tip">recent
+</div><div class="result-name"><span>index.html</span></div><div class="result-description">index.html</div></li></span><span class="info"><li class="result" tabindex="0" data-path="directions.md"><div class="result-tip">recent
+</div><div class="result-name"><span>directions.md</span></div><div class="result-description">directions.md</div></li></span></ul></section><section class="info hidden"><div class="button-wrap"><button tabindex="0">search files for
+<span>'</span><span></span><span>'</span></button></div></section></dialog></div><div class="right-options hidden-on-small-viewport"><div class="user-is-logging-in hidden"><span><div class="loader" data-testid="loader"><div class="moon"></div><div class="earth"></div><div class="asteroid"></div><div class="asteroid-dust"></div></div></span></div><div id="user-options-pop-button" class="action opens-pop-over hidden" data-tooltip="User options"><div class="avatar icon anon-avatar" style="
+        background-color: #98a7f2;
+      "></div><span class="down-arrow icon"></span></div><a class=""><button id="sign-in-button" class="sign-in-button">Sign in
+</button></a><div class="action opens-pop-over" data-tooltip="Glitch options" data-tooltip-right="true"><span class="glitch-logo icon production"></span><span class="down-arrow icon"></span></div></div><div class="right-options small-viewport-only small-viewport-options"><div class="action opens-pop-over"><span class="glitch-logo icon production"></span><span class="down-arrow icon"></span></div></div></nav><dialog class="pop-over project-pop hidden"><section class="info"><div class="project-info-container"><img class="project-avatar-image opens-pop-over" src="./assets – enthusiastic-guppy_files/dd04c617-bbf6-44b5-a9ee-8b52fb5132be.png"><div class="project-avatar-loader hidden"><span><div class="loader" data-testid="loader"><div class="moon"></div><div class="earth"></div><div class="asteroid"></div><div class="asteroid-dust"></div></div></span></div><div class="project-info-meta"><div class="input-wrap"><input class="project-name" maxlength="50"><span class="project-name-loader hidden"><span><div class="loader" data-testid="loader"><div class="moon"></div><div class="earth"></div><div class="asteroid"></div><div class="asteroid-dust"></div></div></span></span><div class="field-error-message hidden"></div></div><p class="content-editable" contenteditable="true">Your very own basic web page, ready for you to customize.</p></div></div></section><section class="actions"><div class="button-wrap"><button id="new-project">New Project
+<div class="emoji sparkles"></div></button></div><div class="button-wrap"><a href="https://glitch.com/edit/#!/remix/enthusiastic-guppy"><button id="remix-project"><span>Remix Project
+</span><div class="emoji microphone"></div></button></a></div></section><section class="actions hidden"><div class="button-wrap"><button id="switch-project">Switch Project
+<div class="emoji hibiscus"></div></button></div></section><section class="actions"><div class="button-wrap disabled"><button>Switch Project
+<div class="emoji hibiscus"></div></button></div><p>Access all your projects anywhere
+</p><div class="button-wrap"><a><button>Sign In
+</button></a></div><p>or
+<a href="https://glitch.com/edit/#">Sign up
+</a></p></section><section class="info hidden"><p>Hide project from community searches
+</p><div class="button-wrap"><label class="button"><input type="checkbox"><span>Not for Kids</span><span class="emoji see-no-evil-monkey"></span></label></div></section><section class="danger-zone"><div class="button-wrap"><button id="delete-project"><span>Delete This Project
+</span><div class="emoji bomb"></div></button></div></section></dialog><dialog class="pop-over projects-select-pop hidden"><section class="info clickable-label"><div class="back icon"></div><h1>Your Projects
+<div class="emoji hibiscus"></div></h1></section><section class="info"><div class="input-wrap"><input id="project-search" class="search-input" placeholder="search projects"></div></section><section class="actions results-list"><ul class="results"><a class="active" href="https://glitch.com/edit/#!/enthusiastic-guppy" data-test-project-type="enthusiastic-guppy"><li class="result"><img class="avatar" src="./assets – enthusiastic-guppy_files/dd04c617-bbf6-44b5-a9ee-8b52fb5132be.png"><div class="result-name" title="enthusiastic-guppy">enthusiastic-guppy</div><div class="result-description">Your very own basic web page, ready for you to customize.</div></li></a><a class="" href="https://glitch.com/edit/#!/different-oyster" data-test-project-type="different-oyster"><li class="result"><img class="avatar" src="./assets – enthusiastic-guppy_files/29e315c4-d615-47e1-83f7-fcd54241d914.png"><div class="result-name" title="different-oyster">different-oyster</div><div class="result-description">Your very own basic web page, ready for you to customize.</div></li></a></ul><div class="projects-list-loading"><span><div class="loader" data-testid="loader"><div class="moon"></div><div class="earth"></div><div class="asteroid"></div><div class="asteroid-dust"></div></div></span></div></section></dialog><dialog class="pop-over project-avatar-pop hidden"><section class="info clickable-label"><div class="back icon"></div><h1>Project Avatar
+</h1></section><section class="actions"><img class="avatar-image" src="./assets – enthusiastic-guppy_files/dd04c617-bbf6-44b5-a9ee-8b52fb5132be.png"><div class="button-wrap"><button>Random
+<div class="emoji bouquet"></div></button></div><div class="button-wrap"><button>Upload
+<div class="emoji arrow-up"></div></button></div></section></dialog><dialog class="pop-over new-project-pop hidden"><section class="info clickable-label"><div class="back icon"></div><h1>New Project
+<span class="emoji sparkles"></span></h1></section><section class="actions results-list"><ul class="results"><a class="" href="https://glitch.com/edit/#!/remix/hello-webpage" data-test-project-type="hello-webpage"><li class="result"><img class="avatar" src="./assets – enthusiastic-guppy_files/929980a8-32fc-4ae7-a66f-dddb3ae4912c.png"><div class="result-name" title="hello-webpage">hello-webpage</div><div class="result-description">Your very own basic web page, ready for you to customize.</div></li></a><a class="" href="https://glitch.com/edit/#!/remix/hello-express" data-test-project-type="hello-express"><li class="result"><img class="avatar" src="./assets – enthusiastic-guppy_files/a0fcd798-9ddf-42e5-8205-17158d4bf5bb.png"><div class="result-name" title="hello-express">hello-express</div><div class="result-description">A simple Node app built on Express, instantly up and running.</div></li></a><a class="" href="https://glitch.com/edit/#!/remix/hello-sqlite" data-test-project-type="hello-sqlite"><li class="result"><img class="avatar" src="./assets – enthusiastic-guppy_files/cb519589-591c-474f-8986-a513f22dbf88.png"><div class="result-name" title="hello-sqlite">hello-sqlite</div><div class="result-description">A simple Node app with a SQLite database to hold app data.</div></li></a></ul></section><section class="info"><div class="button-wrap"><button>Clone from Git Repo
+</button></div></section></dialog><dialog class="pop-over user-options-pop hidden"><a href="https://glitch.com/user/4434308"><section class="info profile-summary"><div class="profile-wrap"><div class="avatar icon anon-avatar" style="background-color: rgb(152, 167, 242); border-color: rgb(114, 135, 238);"></div><div class="user-info"><h1>Anonymous</h1><p class="login">@null</p></div></div></section></a><section class="info"><p>Upload your own avatar image to stand out
+</p><a href="https://glitch.com/user/4434308"><button>Edit Profile
+</button></a></section><section class="actions"><button>Change Theme
+<span class="emoji crescent-moon"></span></button></section><section class="actions"><div class="button-wrap"><label class="button" tabindex="0"><input type="checkbox" tabindex="-1"><span>Refresh App on Changes
+</span></label></div><div class="button-wrap"><label class="button" tabindex="0"><input type="checkbox" tabindex="-1"><span>Wrap Text
+</span></label></div></section><section class="danger-zone"><div class="button-wrap"><button id="sign-out">Sign Out
+<div class="emoji balloon"></div></button></div></section></dialog><dialog class="pop-over about-pop hidden"><section class="actions"><div class="button-wrap"><a href="https://glitch.com/"><button>Back to Glitch
+<div class="emoji carp-streamer"></div></button></a></div></section><section class="actions"><p>For support and feedback
+</p><div class="button-wrap"><a href="https://glitch.com/help"><button>Docs and Help
+<div class="emoji umbrella"></div></button></a></div><div class="button-wrap"><a href="https://support.glitch.com/"><button>Community Forum
+<div class="emoji ambulance"></div></button></a></div></section><section class="info"><div class="button-wrap"><a href="https://glitch.com/about"><button>About Glitch
+<div class="emoji carp-streamer"></div></button></a></div><div class="button-wrap"><button>Keyboard Shortcuts
+<div class="emoji musical-keyboard"></div></button></div><div class="button-wrap"><button>New Stuff
+<div class="emoji cat2"></div></button></div><div class="button-wrap"><a href="http://status.glitch.com/"><button>System Status
+<div class="emoji traffic-light"></div></button></a></div><div class="button-wrap"><a href="https://support.glitch.com/t/glitch-credits"><button>Credits
+<div class="emoji rose"></div></button></a></div></section></dialog><dialog class="pop-over small-viewport-options-pop hidden"><section class="info"><h1>Hello
+<span> </span><span>Friend</span></h1></section><section class="actions sign-up"><p>Access all your projects anywhere
+</p><div class="button-wrap"><a><button>Sign In
+</button></a></div><p>or
+<a href="https://glitch.com/edit/#">Sign up
+</a></p></section><section class="actions"><button><span>Glitch Options
+</span><span class="emoji glitch-logo"></span></button></section></dialog><dialog class="pop-over sign-in-email-pop hidden"><section class="info clickable-label"><div class="back icon"></div><h1>Sign in with Email
+<span class="emoji email"></span></h1></section><section class="actions"><form class=""><div class="input-wrap"><input type="email" placeholder="space@jam.com"><div class="field-error-message hidden"></div></div><button><span>Send Sign In
+</span><span class="hidden"><span><div class="loader" data-testid="loader"><div class="moon"></div><div class="earth"></div><div class="asteroid"></div><div class="asteroid-dust"></div></div></span></span></button></form></section><section class="actions hidden"><div class="status-badge"><div class="status success">Almost Done
+</div></div><p><span>Finish signing in from the email sent to
+</span><span></span></p></section><section class="info"><button>Use a sign in code
+</button></section></dialog><dialog class="pop-over sign-in-code-pop hidden"><section class="info clickable-label"><div class="back icon"></div><h1>Use a sign in code
+</h1></section><section class="actions"><form><p class="action-description">Paste your temporary sign in code below
+</p><div class="input-wrap"><input placeholder="cute-unique-cosmos"><div class="field-error-message hidden">Code not found or already used. Try signing in with email.
+</div></div><button>Sign In
+<span class="hidden"><span><div class="loader" data-testid="loader"><div class="moon"></div><div class="earth"></div><div class="asteroid"></div><div class="asteroid-dust"></div></div></span></span></button></form></section><section class="info"><button>Sign in with Email
+<div class="emoji email"></div></button></section></dialog></header><main id="editor" class="" style="margin-bottom: 0px;"><div class="editor-container"><section id="sidebar" class="sidebar"><section class="sidebar-people-wrap"><div class="sidebar-people"><span class="collaborators opens-pop-over"><span class="person"><span><div class="avatar icon sidebar-avatar anon-avatar" style="
+        background-color: #6ff783;
+      " data-tooltip="Anonymous" data-tooltip-left="true"><span class="hidden"><div class="heart"></div><div class="heart heart-child"></div></span></div></span></span></span><span class="collaborators opens-pop-over hidden"></span><span class="collaborators-buttons"><button id="share-project" class="share-project opens-pop-over"><div class="project-is-private hidden"><span class="private-icon"></span></div><span class="label">Share
+</span><span class="down-arrow icon"></span></button><dialog class="pop-over share-pop hidden"><section class="info"><div class="button-wrap"><label class="button" role="button" title="Project Privacy" tabindex="0"><input class="pointer-events-none" type="checkbox" tabindex="-1"><span class="public-icon"></span><span>Make this Project Private
+</span></label></div></section><section class="info share-link-generator"><div class="button-wrap"><div class="segmented-buttons"><button class="active">Project Page
+</button><button class="">Live App
+</button><button class="">Code
+</button></div></div><p><span class=""><p class="hidden"><span class="private-icon is-private"></span><span>Only project members or teams can view
+</span></p><p><input class="share-link project-page-url" copyable="true" readonly="true" data-copy-url="https://glitch.com/~enthusiastic-guppy"><button class="button-copy" data-clipboard-text="https://glitch.com/~enthusiastic-guppy">copy
+</button></p></span><span class="hidden"><input class="share-link app-url" copyable="true" readonly="true" data-copy-url="https://enthusiastic-guppy.glitch.me"><button class="button-copy" data-clipboard-text="https://enthusiastic-guppy.glitch.me">copy
+</button></span><span class="hidden"><p class="hidden"><span class="private-icon is-private"></span><span>Only project members or teams can view
+</span></p><p class=""><span class="secrets-sidebar-icon"></span><span>Non-members won't be able to see your .env file secrets
+</span></p><p><span class="hidden"><span><div class="loader" data-testid="loader"><div class="moon"></div><div class="earth"></div><div class="asteroid"></div><div class="asteroid-dust"></div></div></span></span><span class=""><input class="share-link editor-url" copyable="true" readonly="true" data-copy-url="https://glitch.com/edit/#!/enthusiastic-guppy"><button class="button-copy" data-clipboard-text="https://glitch.com/edit/#!/enthusiastic-guppy">copy
+</button></span></p></span></p></section><section class="info"><h2><span>Invite Others to Edit
+</span><span class="emoji rainbow"></span></h2><span class="hidden"><span><div class="loader" data-testid="loader"><div class="moon"></div><div class="earth"></div><div class="asteroid"></div><div class="asteroid-dust"></div></div></span></span><p class=""><a class="share-link" copyable="true" href="https://glitch.com/edit/#!/join/fc85b987-196a-4cdf-984e-72d0c19509db">glitch.com/edit/#!/join/fc85b987-196a-4cdf-984e-72d0c19509db</a><button id="invite-url" class="button-copy" data-clipboard-text="https://glitch.com/edit/#!/join/fc85b987-196a-4cdf-984e-72d0c19509db">copy
+</button></p></section><section class="info"><div class="button-wrap"><button>Share Embed
+<div class="emoji bento"></div></button></div><div class="button-wrap"><button>Share Buttons
+<div class="emoji love-hotel"></div></button></div></section></dialog><dialog class="pop-over share-buttons-pop hidden"><section class="info clickable-label"><div class="back icon"></div><h1>Share Buttons
+<div class="emoji love-hotel"></div></h1></section><section class="info"><p>Add these to your project
+</p></section><section class="actions"><h2>Share your code
+</h2><p><img src="./assets – enthusiastic-guppy_files/2bdfb3f8-05ef-4035-a06e-2043962a3a13_view-source@2x.png" height="33" alt="Example of View Source button"></p><div class="input-wrap"><input copyable="true"><button class="button-copy" data-clipboard-text="&lt;!-- View Source Button --&gt;
+&lt;a href=&quot;https://glitch.com/edit/#!/enthusiastic-guppy&quot;&gt;
+  &lt;img src=&quot;https://cdn.glitch.com/2bdfb3f8-05ef-4035-a06e-2043962a3a13%2Fview-source%402x.png?1513093958802&quot; alt=&quot;view source&quot; height=&quot;33&quot;&gt;
+&lt;/a&gt;">copy
+</button></div><p><img src="./assets – enthusiastic-guppy_files/2bdfb3f8-05ef-4035-a06e-2043962a3a13_remix@2x.png" height="33" alt="Example of Remix This button"></p><div class="input-wrap"><input copyable="true"><button class="button-copy" data-clipboard-text="&lt;!-- Remix Button --&gt;
+&lt;a href=&quot;https://glitch.com/edit/#!/remix/enthusiastic-guppy&quot;&gt;
+  &lt;img src=&quot;https://cdn.glitch.com/2bdfb3f8-05ef-4035-a06e-2043962a3a13%2Fremix%402x.png?1513093958726&quot; alt=&quot;remix this&quot; height=&quot;33&quot;&gt;
+&lt;/a&gt;">copy
+</button></div></section><section class="actions"><h2>Share who made this
+</h2><p><img src="./assets – enthusiastic-guppy_files/2bdfb3f8-05ef-4035-a06e-2043962a3a13_project-helper-menu@2x.png" height="39" alt="Example of Project Helper menu"></p><div class="input-wrap"><input copyable="true"><button class="button-copy" data-clipboard-text="&lt;!-- Project Helper --&gt;
+&lt;!-- ✂️ Copy this script to your project&#39;s view: --&gt;
+  &lt;script src=&quot;https://button.glitch.me/button.js&quot;&gt;&lt;/script&gt;
+&lt;!-- ✂️ Copy this to wherever you want the button to show: --&gt;
+  &lt;div class=&quot;glitchButton&quot;&gt;&lt;/div&gt;">copy
+</button></div><p><a href="https://button.glitch.me/">(more info)
+</a></p></section></dialog></span><div class="join-people hidden"><button class="join-project-button"><span class="label">Join
+</span></button></div><span class="viewers hidden">0 more 👀</span><div class="asking-for-help hidden" style="max-width:undefined"><span><span class="asking-for-help-loader"><div class="sparkles"><div class="left"><div class="sparkle"><div class="sparkle-child" style="background-color: #d35b87"></div></div><div class="sparkle"><div class="sparkle-child" style="background-color: #37bfaa"></div></div><div class="sparkle"><div class="sparkle-child" style="background-color: #c6cbff"></div></div></div><div class="middle"><div class="sparkle"><div class="sparkle-child" style="background-color: #159b0c"></div></div><div class="sparkle"><div class="sparkle-child" style="background-color: #d8b450"></div></div><div class="sparkle"><div class="sparkle-child" style="background-color: #e5e112"></div></div></div><div class="right"><div class="sparkle"><div class="sparkle-child" style="background-color: #c3a8f7"></div></div><div class="sparkle"><div class="sparkle-child" style="background-color: #ed388a"></div></div><div class="sparkle"><div class="sparkle-child" style="background-color: #a068c4"></div></div></div></div><span class="asking-for-help-icon"><span class="ask-for-help-hand"></span><span class="ask-for-help-face"></span></span></span></span><p>Asking the community for help...
+</p><button class=""><span class="label">Stop Asking
+</span></button><button class="join-people hidden"><span class="label">Offer Help
+</span></button></div></div></section><div class="icon-collapse icon"></div><div class="sidebar-status-when-collapsed"><span class="hidden"><span><div class="loader" data-testid="loader"><div class="moon"></div><div class="earth"></div><div class="asteroid"></div><div class="asteroid-dust"></div></div></span></span><span class="error hidden"></span><span class="warning hidden"></span><span class="off hidden"></span><span class="asking-for-help-loader hidden"><span class="ask-for-help-hand"></span><span class="ask-for-help-face"></span></span></div><section id="sidebar-file-controls" class="sidebar-file-controls"><div class="button-wrap"><button id="new-file" class="new-file opens-pop-over"><span class="label">New File
+</span><span class="down-arrow icon"></span></button><dialog class="pop-over new-file-pop hidden"><section class="actions"><form><div class="input-wrap"><input id="new-file-input" placeholder="cool-file.js" spellcheck="false"></div><div class="button-wrap"><button id="add-file">Add File
+<div class="emoji thumbsup"></div></button></div></form></section><section class="actions"><div class="button-wrap"><button>Upload
+<span class="emoji arrow-up"></span></button></div></section><section class="info"><div class="button-wrap"><button><span>Add License
+</span><span class="emoji balance-scale"></span><span class="hidden"><span><div class="loader" data-testid="loader"><div class="moon"></div><div class="earth"></div><div class="asteroid"></div><div class="asteroid-dust"></div></div></span></span></button></div><div class="button-wrap"><button><span>Add Code of Conduct
+</span><span class="emoji ferris-wheel"></span><span class="hidden"><span><div class="loader" data-testid="loader"><div class="moon"></div><div class="earth"></div><div class="asteroid"></div><div class="asteroid-dust"></div></div></span></span></button></div></section></dialog></div></section><section id="sidebar-files" class="sidebar-files"><div class="files"><div class="loader-ellipses hidden"></div><ul class="filetree"><li class="filetree-child assets-sidebar-icon other active" tabindex="0">assets
+</li><li class="filetree-child file other hidden" tabindex="0" title=".glitch-assets"><div class="current-users"></div><div class="rewind-state hidden"><div class="rewind-state-icon"><div class="mixed-lines-background"></div></div></div><div class="search-state hidden"><span class="status-badge"><div class="status warning">0<div class="search-in-badge icon"></div></div></span></div><div class="display-file-name"><span class="folder-path visible"></span><span class="filename"></span><span class="extension-type other">.glitch-assets</span></div><input class="file-rename-input hidden" spellcheck="false"><div class="options icon opens-pop-over"></div></li><li class="filetree-child file info" tabindex="0" title="content.txt"><div class="current-users"></div><div class="rewind-state hidden"><div class="rewind-state-icon"><div class="mixed-lines-background"></div></div></div><div class="search-state hidden"><span class="status-badge"><div class="status warning">0<div class="search-in-badge icon"></div></div></span></div><div class="display-file-name"><span class="folder-path visible"></span><span class="filename">content</span><span class="extension-type info">.txt</span></div><input class="file-rename-input hidden" spellcheck="false"><div class="options icon opens-pop-over"></div></li><li class="filetree-child file info" tabindex="0" title="directions.md"><div class="current-users"></div><div class="rewind-state hidden"><div class="rewind-state-icon"><div class="mixed-lines-background"></div></div></div><div class="search-state hidden"><span class="status-badge"><div class="status warning">0<div class="search-in-badge icon"></div></div></span></div><div class="display-file-name"><span class="folder-path visible"></span><span class="filename">directions</span><span class="extension-type info">.md</span></div><input class="file-rename-input hidden" spellcheck="false"><div class="options icon opens-pop-over"></div></li><li class="filetree-child file view" tabindex="0" title="index.html"><div class="current-users"></div><div class="rewind-state hidden"><div class="rewind-state-icon"><div class="mixed-lines-background"></div></div></div><div class="search-state hidden"><span class="status-badge"><div class="status warning">0<div class="search-in-badge icon"></div></div></span></div><div class="display-file-name"><span class="folder-path visible"></span><span class="filename">index</span><span class="extension-type view">.html</span></div><input class="file-rename-input hidden" spellcheck="false"><div class="options icon opens-pop-over"></div></li><li class="filetree-child file logic" tabindex="0" title="script.js"><div class="current-users"></div><div class="rewind-state hidden"><div class="rewind-state-icon"><div class="mixed-lines-background"></div></div></div><div class="search-state hidden"><span class="status-badge"><div class="status warning">0<div class="search-in-badge icon"></div></div></span></div><div class="display-file-name"><span class="folder-path visible"></span><span class="filename">script</span><span class="extension-type logic">.js</span></div><input class="file-rename-input hidden" spellcheck="false"><div class="options icon opens-pop-over"></div></li><li class="filetree-child file style" tabindex="0" title="style.css"><div class="current-users"></div><div class="rewind-state hidden"><div class="rewind-state-icon"><div class="mixed-lines-background"></div></div></div><div class="search-state hidden"><span class="status-badge"><div class="status warning">0<div class="search-in-badge icon"></div></div></span></div><div class="display-file-name"><span class="folder-path visible"></span><span class="filename">style</span><span class="extension-type style">.css</span></div><input class="file-rename-input hidden" spellcheck="false"><div class="options icon opens-pop-over"></div></li></ul></div></section><resizer></resizer></section><section class="project-loading hidden"><div class="welcome-message"><p class="loading">Fetching Project
+</p><p class="message">Securely store app secrets and config in .env</p><span><div class="loader" data-testid="loader"><div class="moon"></div><div class="earth"></div><div class="asteroid"></div><div class="asteroid-dust"></div></div></span></div></section><section class="project-loading hidden"><div class="welcome-message"><span><div class="loader" data-testid="loader"><div class="moon"></div><div class="earth"></div><div class="asteroid"></div><div class="asteroid-dust"></div></div></span></div></section><aside class="notifications"><div class="notification notifyAutosave hidden">psst, Glitch autosaves 八(＾□＾*)
+</div><div class="notification notifyFileUploading hidden">File uploading...
+</div><div class="notification notifyUnfinished hidden">Feature not finished ＜(。_。)＞
+</div><div class="notification notifyConnectionError hidden">Hmm.. We're having trouble connecting. Try refreshing?
+</div><div class="notification notifyReconnected hidden">Connected
+</div><div class="notification notifyCopied hidden">Copied
+</div><div class="notification notifyCopyFailure hidden">Press Ctrl-C to copy</div><div class="notification notifyPackageUpdated hidden">Package Updated
+</div><div class="notification notifyPackageAdded hidden">Package Added
+</div><div class="notification notifyProjectSave hidden">Saving...
+</div><div class="notification notifyUploadFailure hidden">File upload failed. Try again in a few minutes?
+</div><div class="notification notifyProjectIsReadOnlyForCurrentUser hidden">Remix or Join to edit
+</div><div class="notification notifyInvalidFileName hidden">Names can't have .., $, ~, \, *, or start with /
+</div><div class="notification notifyPreviewWindowOpened hidden">Opened in another tab or window
+</div><div class="notification notifyGenericError hidden">Arg, something went wrong. Try again? :@
+</div><div class="notification notifyJoinedProject hidden">You're now able to edit
+</div><div class="notification notifyJoinedProject hidden">You can now help out – Thanks!
+</div><div class="notification notifyLeftProject hidden">You've left this project
+</div><div class="notification notifyHelpersCantUseConsole hidden">For safety, project helpers can't use the console
+</div><div class="notification notifyUploadLocalFileOnly hidden">To add this file, you'll need to save it to your computer first
+</div><div class="notification notifyWelcomeImportedProjectUser hidden"><p>Your project is now on Glitch
+</p><div class="button-wrap"><a href="https://glitch.com/about/features/"><button>About Glitch
+<span class="emoji carp-streamer"></span></button></a></div></div><div class="notification notifyGithubImporting hidden"><span><span><div class="loader" data-testid="loader"><div class="moon"></div><div class="earth"></div><div class="asteroid"></div><div class="asteroid-dust"></div></div></span></span><span>Importing from
+</span><span>GitHub</span></div><div class="notification notifyGithubExporting hidden"><span><span><div class="loader" data-testid="loader"><div class="moon"></div><div class="earth"></div><div class="asteroid"></div><div class="asteroid-dust"></div></div></span></span><span>Exporting to
+</span><span>GitHub</span></div><div class="notification notifyGithubImportSuccess hidden">Import Successful
+</div><div class="notification notifyGithubExportSuccess hidden">Export Successful
+</div><div class="notification notifyUploading hidden">Uploading
+<span>asset
+</span><progress class="notify-progress" max="100"></progress></div><div class="notification notifyReconnecting hidden">Reconnecting
+<span class="loader-ellipses"></span></div><div class="notification notifyAnonProjectLimits hidden"><p>Sign in to keep your project
+</p><div class="button-wrap"><button>Sign In
+</button><button>Got it
+</button></div></div><div class="notification notifyAnonUserLimits hidden"><p>Sign in to access all your projects anywhere
+</p><div class="button-wrap"><button>Sign In
+</button><button>Got it
+</button></div></div><div class="notification notifyRemixToEdit hidden"><div class="button-wrap"><button><span>Remix to Edit
+</span><span class="emoji microphone"></span></button></div><div class="button-wrap hidden"><button><span>Edit your Project Here
+</span></button></div></div><div class="notification notifyCanEdit hidden">You can now edit
+</div><div class="notification notifyOpenInFullEditor hidden"><p>Save this project by editing it fullscreen
+</p><div class="button-wrap"><button>Got it
+</button><button>Save Project
+<span class="emoji carp-streamer"></span></button></div></div><div class="notification notifyEditorIsEmbedRemixing hidden"><span><span><div class="loader" data-testid="loader"><div class="moon"></div><div class="earth"></div><div class="asteroid"></div><div class="asteroid-dust"></div></div></span></span><span>Remixing project
+</span></div><div class="notification notifyCanEditInEmbedRemixedEmbed"><p>You can now edit here or fullscreen
+</p><div class="button-wrap"><button>Got it
+</button><button><span>Edit Fullscreen
+</span><span class="emoji carp-streamer"></span></button></div></div><div class="notification notifyDeletedProject hidden"><span>Deleted
+</span><span></span><img class="deleted-project-avatar" alt="deleted project avatar"><div class="button-wrap"><button><span>Undo
+</span><span class="emoji bomb"></span></button></div></div><div class="notification notifyEditorIsPreviewingRewind hidden"><div class="rewind-tape-container"><div class="rewind-tape"></div><div class="rewind-tape-reel left"></div><div class="rewind-tape-reel right"></div></div><span>Previewing rewind
+</span><div class="button-wrap cta-container hidden"><button class="button-small button-cta button-in-notification">Rewind Project
+<div class="rewind icon"></div></button></div><div class="button-wrap"><button>Cancel
+</button></div></div><div class="notification notifyEditorIsPreviewingRewindTyping hidden"><p>Rewind or cancel to edit
+</p></div><div class="notification notifyEditorRewoundProject hidden"><div class="rewind-tape-container rewound-tape"><div class="rewind-tape"></div><div class="rewind-tape-reel left"></div><div class="rewind-tape-reel right"></div></div><span></span></div><div class="notification notifyEditorIsRewindingProject hidden"><div class="rewind-tape-container"><div class="rewind-tape"></div><div class="rewind-tape-reel left"></div><div class="rewind-tape-reel right"></div></div><span><span><div class="loader" data-testid="loader"><div class="moon"></div><div class="earth"></div><div class="asteroid"></div><div class="asteroid-dust"></div></div></span></span></div><div class="notification notifyCloneError hidden"><p>Couldn't clone
+<span>false</span><span>, maybe it's private?
+</span></p><div class="button-wrap"><button>Grant access
+</button><button>Cancel
+</button></div></div><div class="notification notifyCanNowUseCustomDomains hidden"><p><span class="emoji sparkling-heart"></span><span>By helping others, you can now use
+</span></p><div class="button-wrap"><button><span>Custom Domains
+</span><span class="emoji globe-with-meridians"></span></button></div><div class="button-wrap"><button>Got it
+</button></div></div></aside><span><footer class="footer-options"></footer></span><footer class="footer-project-options"><section class="project-navigators"><div class="button-wrap hidden"><div class="segmented-buttons"><button alt="Select previous result"><div class="left-arrow icon"></div></button><button alt="Select next result"><div class="right-arrow icon"></div></button><button alt="Clear search"><div class="close-icon icon"></div></button><button class="search-box-value"><span></span><span class="status-badge"><div class="status warning">0<div class="search-in-badge icon"></div></div></span></button></div></div></section><section class="advanced-options"><div class="button-wrap"><button class="rewind-button"><div class="rewind icon"></div></button></div><div class="button-wrap"><button id="tools-pop-button" class=""><span>Tools</span><div class="status-badge icon"><div class="status loading hidden"><span><div class="loader" data-testid="loader"><div class="moon"></div><div class="earth"></div><div class="asteroid"></div><div class="asteroid-dust"></div></div></span></div><div class="status error hidden">Error
+</div><div class="status off hidden">Zzz
+</div><div class="status warning hidden">Debug
+</div></div><div class="status-badge icon hidden"><div class="status ok">Warn
+</div></div><span class="up-arrow icon"></span></button><dialog class="pop-over tools-pop hidden"><section class="actions hidden"><p>Sign in to use these
+</p><div class="button-wrap"><a><button>Sign In
+</button></a></div><p>or
+<a href="https://glitch.com/edit/#">Sign up
+</a></p></section><section class="actions hidden hidden"><p>You're not a member of this project. Join or Remix to use these
+</p><div class="button-wrap"><button><span>Join this Project
+</span></button></div><div class="button-wrap"><button><span>Remix Project
+</span><span class="emoji microphone"></span></button></div></section><section class="actions hidden hidden"><p>Edit fullscreen or Remix to use these
+</p><div class="button-wrap"><button><span>Edit Fullscreen
+</span><span class="emoji carp-streamer"></span></button></div><div class="button-wrap"><button><span>Remix Project
+</span><span class="emoji microphone"></span></button></div><div class="button-wrap"><button><span>Edit your Project Here
+</span></button></div></section><section class="actions"><div class="button-wrap"><button class=""><span>Logs
+</span><div class="emoji newspaper"></div><div class="status-badge icon"><div class="status loading hidden"><span><div class="loader" data-testid="loader"><div class="moon"></div><div class="earth"></div><div class="asteroid"></div><div class="asteroid-dust"></div></div></span></div><div class="status error hidden">Error
+</div><div class="status off hidden">Zzz
+</div><div class="status warning hidden">Debug
+</div></div></button></div><div class="button-wrap"><a class="" href="https://glitch.com/edit/console.html?enthusiastic-guppy" target="_blank"><button><span>Full Page Console →
+</span><div class="emoji pager"></div></button></a></div></section><section class="info"><div class="button-wrap"><button class=""><span>Container Stats</span><span class=""><div class="status-badge icon hidden"><div class="status ok">Warn
+</div></div><div class="status-badge icon"><div class="status ok">Ok
+</div></div><span class="hidden"><span><div class="loader" data-testid="loader"><div class="moon"></div><div class="earth"></div><div class="asteroid"></div><div class="asteroid-dust"></div></div></span></span></span></button></div><div class="button-wrap"><button class="">Custom Domains
+<div class="emoji globe-with-meridians"></div></button></div><div class="button-wrap"><button id="git-import-export" class=""><span>Git, Import, and Export
+</span><span class="emoji tokyo-tower"></span></button></div></section></dialog><dialog class="pop-over git-import-export-pop hidden"><section class="info clickable-label"><div class="back icon"></div><h1>Git, Import, Export
+<div class="emoji tokyo-tower"></div></h1></section><section class="actions hidden"><p>Edit fullscreen to use these
+</p><div class="button-wrap"><button><span>Edit Fullscreen
+</span><span class="emoji carp-streamer"></span></button></div></section><section class="info git-info"><p>Every Glitch project is also a Git repo
+</p><div class="button-wrap"><div class="segmented-buttons"><button class="active">Read
+</button><button class="">Write
+</button></div></div><div class="input-wrap"><input copyable="true"><button class="button-copy" data-clipboard-text="https://api.glitch.com/enthusiastic-guppy/git">copy
+</button></div><p class="write-container hidden"><a href="https://glitch.com/edit/#">Sign In</a><span> </span><span>to access git push credentials
+</span></p><p class="write-container hidden hidden hidden"><a href="https://glitch.com/edit/#">Join this Project</a><span> </span><span>to access git push credentials
+</span></p><div class="write-container hidden hidden"><div class="button-wrap"><button class="button-copy button-small" style="position: unset;" data-clipboard-text="null">Copy User Name
+</button></div><p>Password is an empty string
+</p></div></section><section class="actions"><p class=""><a class="repo-access grant" href="https://glitch.com/edit/#">Add your GitHub account</a><span> </span><span>to import and export to a repo
+</span></p><div class="button-wrap"><button disabled="disabled">Import from GitHub
+<div class="emoji octocat"></div></button></div><div class="button-wrap"><button disabled="disabled">Export to GitHub
+<div class="emoji octocat"></div></button></div></section><section class="actions"><p class="hidden hidden"><a href="https://glitch.com/edit/#">Join this Project</a><span> </span><span>to download
+</span></p><p class="hidden"><a href="https://glitch.com/edit/#">Sign In</a><span> </span><span>to use these
+</span></p><p class="hidden hidden"><span>For safety, project helpers can't download
+</span></p><div class="button-wrap"><a href="https://api.glitch.com/project/download/?authorization=c0569f50-e714-4541-913b-e553b31798bc&amp;projectId=dd04c617-bbf6-44b5-a9ee-8b52fb5132be"><button id="download-project"><span>Download Project
+</span><div class="emoji turtle"></div></button></a></div></section></dialog><dialog class="custom-domain-pop pop-over hidden"><section class="info clickable-label"><div class="back icon"></div><h1>Custom Domains
+<div class="emoji globe-with-meridians"></div></h1></section><section class="info"><p><div class="emoji clap"></div><span> </span><a href="https://glitch.com/help/how-can-i-get-help-with-code-in-my-project"><span>Help others and get thanked</span></a><span> </span><span>NaN</span><span> </span><span>more times to use this
+</span></p></section><section class="actions disabled"><p>Add a domain that you've already purchased elsewhere
+</p><div class="hidden"><span><div class="loader" data-testid="loader"><div class="moon"></div><div class="earth"></div><div class="asteroid"></div><div class="asteroid-dust"></div></div></span></div><form class=""><input placeholder="www.my-domain.com"><div class="field-error-message hidden"></div><button class="add-domain">Add Domain
+</button></form><div class="status-badge"><div class="status success hidden">Almost Done
+</div></div><p class="hidden"><span>At your domain registrar you'll need to create a
+</span><span class="bold">CNAME
+</span><span>for
+</span><span class="bold">
+</span><span>pointing to
+</span><span class="bold">
+</span></p><p class="hidden"><a href="https://glitch.com/help/custom-domain/" target="_blank">More info
+</a></p></section><section class="info hidden"><a href="https://fly.io/" target="_blank"><span>Service by Fly.io</span><img class="flyio icon" src="./assets – enthusiastic-guppy_files/flyio-logo.svg"></a></section></dialog></div></section></footer><section class="media-wrap hidden"></section><section class="assets-wrap"><section class="assets-helper"><button class="opens-pop-over"><span>Add asset
+</span><span class="down-arrow icon"></span></button><dialog class="pop-over add-asset-pop hidden"><section class="actions"><div class="button-wrap"><button>Upload
+<div class="emoji arrow-up"></div></button></div></section><section class="info"><p>p.s. You can drag and drop files onto Glitch too
+</p></section></dialog></section><div class="assets"><div class="asset opens-pop-over" tabindex="1"><div class="asset-background"><img class="asset-thumbnail" src="./assets – enthusiastic-guppy_files/29e315c4-d615-47e1-83f7-fcd54241d914_thumbnails_4fe2938a-963f-4754-a48c-0af2e2df417d%2Flogo.png" width="330" height="83"></div><p class="asset-thumbnail-name show-on-hover">4fe2938a-963f-4754-a48c-0af2e2df417d%2Flogo.png</p></div><div class="asset opens-pop-over" tabindex="1"><div class="asset-background"><img class="asset-thumbnail" src="./assets – enthusiastic-guppy_files/29e315c4-d615-47e1-83f7-fcd54241d914_thumbnails_4fe2938a-963f-4754-a48c-0af2e2df417d%2Flogo_whimn small.svg" width="330" height="118"></div><p class="asset-thumbnail-name show-on-hover">4fe2938a-963f-4754-a48c-0af2e2df417d%2Flogo_whimn small.svg</p></div><div class="asset opens-pop-over" tabindex="1"><div class="asset-background"><img class="asset-thumbnail" src="./assets – enthusiastic-guppy_files/29e315c4-d615-47e1-83f7-fcd54241d914_thumbnails_4fe2938a-963f-4754-a48c-0af2e2df417d%2Fflower-middle-left.png" width="330" height="301"></div><p class="asset-thumbnail-name show-on-hover">4fe2938a-963f-4754-a48c-0af2e2df417d%2Fflower-middle-left.png</p></div><div class="asset opens-pop-over" tabindex="1"><div class="asset-background"><img class="asset-thumbnail" src="./assets – enthusiastic-guppy_files/29e315c4-d615-47e1-83f7-fcd54241d914_thumbnails_4fe2938a-963f-4754-a48c-0af2e2df417d%2Fleaf-top-left.png" width="285" height="330"></div><p class="asset-thumbnail-name show-on-hover">4fe2938a-963f-4754-a48c-0af2e2df417d%2Fleaf-top-left.png</p></div><div class="asset opens-pop-over" tabindex="1"><div class="asset-background"><img class="asset-thumbnail" src="./assets – enthusiastic-guppy_files/29e315c4-d615-47e1-83f7-fcd54241d914_thumbnails_4fe2938a-963f-4754-a48c-0af2e2df417d%2Fmosaic-1.png" width="330" height="194"></div><p class="asset-thumbnail-name show-on-hover">4fe2938a-963f-4754-a48c-0af2e2df417d%2Fmosaic-1.png</p></div><div class="asset opens-pop-over" tabindex="1"><div class="asset-background"><img class="asset-thumbnail" src="./assets – enthusiastic-guppy_files/29e315c4-d615-47e1-83f7-fcd54241d914_thumbnails_4fe2938a-963f-4754-a48c-0af2e2df417d%2Fmosaic-2.png" width="330" height="194"></div><p class="asset-thumbnail-name show-on-hover">4fe2938a-963f-4754-a48c-0af2e2df417d%2Fmosaic-2.png</p></div><div class="asset opens-pop-over" tabindex="1"><div class="asset-background"><img class="asset-thumbnail" src="./assets – enthusiastic-guppy_files/29e315c4-d615-47e1-83f7-fcd54241d914_thumbnails_4fe2938a-963f-4754-a48c-0af2e2df417d%2Fleaf-top-right.png" width="285" height="330"></div><p class="asset-thumbnail-name show-on-hover">4fe2938a-963f-4754-a48c-0af2e2df417d%2Fleaf-top-right.png</p></div><div class="asset opens-pop-over" tabindex="1"><div class="asset-background"><img class="asset-thumbnail" src="./assets – enthusiastic-guppy_files/29e315c4-d615-47e1-83f7-fcd54241d914_thumbnails_4fe2938a-963f-4754-a48c-0af2e2df417d%2Fleaf-middle-left.png" width="250" height="330"></div><p class="asset-thumbnail-name show-on-hover">4fe2938a-963f-4754-a48c-0af2e2df417d%2Fleaf-middle-left.png</p></div><div class="asset opens-pop-over" tabindex="1"><div class="asset-background"><img class="asset-thumbnail" src="./assets – enthusiastic-guppy_files/29e315c4-d615-47e1-83f7-fcd54241d914_thumbnails_4fe2938a-963f-4754-a48c-0af2e2df417d%2Fcontent-image-2.png" width="228" height="330"></div><p class="asset-thumbnail-name show-on-hover">4fe2938a-963f-4754-a48c-0af2e2df417d%2Fcontent-image-2.png</p></div><div class="asset opens-pop-over" tabindex="1"><div class="asset-background"><img class="asset-thumbnail" src="./assets – enthusiastic-guppy_files/29e315c4-d615-47e1-83f7-fcd54241d914_thumbnails_4fe2938a-963f-4754-a48c-0af2e2df417d%2Fcontent-image-1.png" width="330" height="186"></div><p class="asset-thumbnail-name show-on-hover">4fe2938a-963f-4754-a48c-0af2e2df417d%2Fcontent-image-1.png</p></div><div class="asset opens-pop-over" tabindex="1"><div class="asset-background"><img class="asset-thumbnail" src="./assets – enthusiastic-guppy_files/29e315c4-d615-47e1-83f7-fcd54241d914_thumbnails_4fe2938a-963f-4754-a48c-0af2e2df417d%2Fleaves-bottom.png" width="330" height="74"></div><p class="asset-thumbnail-name show-on-hover">4fe2938a-963f-4754-a48c-0af2e2df417d%2Fleaves-bottom.png</p></div><div class="asset opens-pop-over" tabindex="1"><div class="asset-background"><img class="asset-thumbnail" src="./assets – enthusiastic-guppy_files/29e315c4-d615-47e1-83f7-fcd54241d914_thumbnails_4fe2938a-963f-4754-a48c-0af2e2df417d%2Fmosaic-3.png" width="330" height="293"></div><p class="asset-thumbnail-name show-on-hover">4fe2938a-963f-4754-a48c-0af2e2df417d%2Fmosaic-3.png</p></div><div class="asset opens-pop-over" tabindex="1"><div class="asset-background"><img class="asset-thumbnail" src="./assets – enthusiastic-guppy_files/29e315c4-d615-47e1-83f7-fcd54241d914_thumbnails_4fe2938a-963f-4754-a48c-0af2e2df417d%2Ffinal.png" width="105" height="330"></div><p class="asset-thumbnail-name show-on-hover">4fe2938a-963f-4754-a48c-0af2e2df417d%2Ffinal.png</p></div><div class="asset opens-pop-over" tabindex="1"><div class="asset-background"><img class="asset-thumbnail" src="./assets – enthusiastic-guppy_files/29e315c4-d615-47e1-83f7-fcd54241d914_thumbnails_slider-4.jpg" width="330" height="226"></div><p class="asset-thumbnail-name show-on-hover">slider-4.jpg</p></div><div class="asset opens-pop-over" tabindex="1"><div class="asset-background"><img class="asset-thumbnail" src="./assets – enthusiastic-guppy_files/29e315c4-d615-47e1-83f7-fcd54241d914_thumbnails_slider-3.png" width="330" height="226"></div><p class="asset-thumbnail-name show-on-hover">slider-3.png</p></div><div class="asset opens-pop-over" tabindex="1"><div class="asset-background"><img class="asset-thumbnail" src="./assets – enthusiastic-guppy_files/29e315c4-d615-47e1-83f7-fcd54241d914_thumbnails_slider-5.jpg" width="330" height="226"></div><p class="asset-thumbnail-name show-on-hover">slider-5.jpg</p></div><div class="asset opens-pop-over" tabindex="1"><div class="asset-background"><img class="asset-thumbnail" src="./assets – enthusiastic-guppy_files/29e315c4-d615-47e1-83f7-fcd54241d914_thumbnails_slider-2.png" width="330" height="226"></div><p class="asset-thumbnail-name show-on-hover">slider-2.png</p></div><div class="asset opens-pop-over" tabindex="1"><div class="asset-background"><img class="asset-thumbnail" src="./assets – enthusiastic-guppy_files/29e315c4-d615-47e1-83f7-fcd54241d914_thumbnails_slider-1.png" width="330" height="226"></div><p class="asset-thumbnail-name show-on-hover">slider-1.png</p></div></div></section><section class="editor-wrap hidden"><section class="editor-helper"><button class="active"><span>Markdown
+</span><span class="icon eye"></span></button><button class="opens-pop-over"><span>Add Package</span><div class="status-badge icon"><span class="hidden"><div class="status loading"><span><div class="loader" data-testid="loader"><div class="moon"></div><div class="earth"></div><div class="asteroid"></div><div class="asteroid-dust"></div></div></span></div></span><span class="hidden"><div class="status warning">0</div></span></div><span class="down-arrow icon"></span></button><span><dialog class="pop-over add-package-pop wide-pop hidden"><section class="info"><div class="input-wrap"><input id="package-search" class="search-input" placeholder="search npm for packages"></div></section><section class="actions results-list"><ul class="results"><div class="packages-list-loading hidden hidden"><span><div class="loader" data-testid="loader"><div class="moon"></div><div class="earth"></div><div class="asteroid"></div><div class="asteroid-dust"></div></div></span></div><span class=""></span><span class="hidden"></span><p class="no-results hidden">no results ヾ(_ _*)
+</p><a href="https://docs.npmjs.com/getting-started/what-is-npm" target="_blank"><li class="result see-all"><img class="npm icon" src="./assets – enthusiastic-guppy_files/npm.svg"><div class="result-name">What is npm →
+</div></li></a><a href="https://www.npmjs.com/search?q=" target="_blank"><li class="result see-all hidden"><img class="npm icon" src="./assets – enthusiastic-guppy_files/npm.svg"><div class="result-name">See all results on npm →
+</div></li></a></ul></section></dialog></span><button id="deploy-to-firebase" class="hidden"><span>Deploy to Firebase
+</span><div class="status-badge icon hidden"><div class="status loading"><span><div class="loader" data-testid="loader"><div class="moon"></div><div class="earth"></div><div class="asteroid"></div><div class="asteroid-dust"></div></div></span></div></div></button><button class="hidden">Firebase Console
+</button><button class="hidden">View Firebase App
+</button><button class="hidden">Sign Out From Firebase
+</button><button class="opens-pop-over hidden"><span class="icon justice"></span><span>Change License</span><span class="down-arrow icon"></span></button><span><span></span></span></section><article id="text-editor" class="text-editor"><div class="CodeMirror cm-s-default" style="width: 100%; height: 0px;"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 0px; left: 46px;"><textarea autocorrect="false" autocapitalize="false" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-vscrollbar" tabindex="-1" cm-not-content="true" style="bottom: 0px; display: block;"><div style="min-width: 1px; height: 67px;"></div></div><div class="CodeMirror-hscrollbar" tabindex="-1" cm-not-content="true" style="right: 17px; left: 0px;"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true" style="height: 17px; width: 17px;"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; min-width: 3px; padding-right: 17px; padding-bottom: 0px; margin-bottom: -17px; border-right-width: 13px; min-height: 16px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation" style="width: initial;"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"><pre class="CodeMirror-line" role="presentation"><span role="presentation" style="padding-right: 0.1px;">{"name":"4fe2938a-963f-4754-a48c-0af2e2df417d%2Fcontent-image-1.png","date":"2018-11-08T04:14:28.035Z","url":"https://cdn.glitch.com/29e315c4-d615-47e1-83f7-fcd54241d914%2F4fe2938a-963f-4754-a48c-0af2e2df417d%252Fcontent-image-1.png","type":"image/png","size":1726854,"imageWidth":1440,"imageHeight":811,"thumbnail":"https://cdn.glitch.com/29e315c4-d615-47e1-83f7-fcd54241d914%2Fthumbnails%2F4fe2938a-963f-4754-a48c-0af2e2df417d%252Fcontent-image-1.png","thumbnailWidth":330,"thumbnailHeight":186,"dominantColor":"rgb(236,201,196)","uuid":"HqFdX7OrpC2l75A7"}</span></pre></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors" style=""><div class="CodeMirror-cursor" style="left: 6px; top: 0px; height: 16px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation" style="width: initial;"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: -40px; width: 40px;"></div><div class="CodeMirror-gutter-wrapper CodeMirror-activeline-gutter" style="left: -40px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 10px; width: 21px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 13px; width: 1px; border-bottom: 0px solid transparent; top: 16px;"></div><div class="CodeMirror-gutters" style="left: 0px; height: 29px;"><div class="CodeMirror-gutter CodeMirror-lint-markers"></div><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 21px;"></div><div class="CodeMirror-gutter CodeMirror-foldgutter"></div></div></div></div></article><article class="markdown-container hidden"><section class="license-summary hidden"><div class="license-column"><p class="column-title">Permissions
+</p><ul></ul></div><div class="license-column"><p class="column-title">Conditions
+</p><ul></ul></div><div class="license-column"><p class="column-title">Limitations
+</p><ul></ul></div></section><section class="markdown-content"></section></article></section></div><div id="app-preview" class="app-preview hidden app-preview-transition" style="width: 200px;"><resizer></resizer><div class="app-preview-helper"><div class="icon-collapse icon"></div><div class="url-wrapper"><button class="opens-pop-over">Change URL</button><dialog class="pop-over app-preview-url-pop hidden"><section class="info"><h1>Change URL
+</h1></section><section class="action"><p>https://enthusiastic-guppy.glitch.me</p><div class="input-wrap"><input placeholder="/"></div></section><section class="info"><div class="button-wrap"><button>Reset
+</button></div></section></dialog></div><button><span class="icon refresh"></span></button><div class="close icon"></div></div><div class="resize-helper"></div><div class="iframe-wrapper"><iframe allow="geolocation; microphone; camera; midi; vr; encrypted-media" src="./assets – enthusiastic-guppy_files/saved_resource(1).html"></iframe></div></div></main><footer id="logs-panel" class="logs-panel panel hidden"><resizer></resizer><header><h1>Logs
+</h1><div class="controls"><div class="button-wrap"><button class="clear-logs"><span>Clear
+</span><div class="emoji bomb"></div></button></div><div class="button-wrap hidden"><button class="button-debugger"><span>Debugger
+</span><div class="emoji lady-beetle"></div></button></div><div class="button-wrap hidden"><button><div class="emoji octagonal-sign"></div><div class="emoji lady-beetle"></div></button></div><div class="button-wrap"><button class=""><span>Console
+</span><div class="emoji pager"></div></button></div><div class="close icon"></div></div></header><div class="console-container hidden"></div><div class="logs-container"><section class="logs"><p class="instance-divider"><hr><span class="log-time relative-time" data-time="1557799637947">a few seconds ago</span></p><p class="log error-log"><pre>Serving at http://b971ff49c848:3000, http://127.0.0.1:3000, http://172.17.0.98:3000</pre><span class="log-time" data-time="1557799637947">12:07 PM</span></p></section></div></footer><footer id="container-stats-panel" class="container-stats-panel panel hidden"><resizer></resizer><header><h1>Container Stats
+</h1><div class="controls"><div class="status-badge icon hidden"><div class="status ok">Warn
+</div></div><div class="status-badge icon"><div class="status ok">Ok
+</div></div></div><div class="loader hidden"><span><div class="loader" data-testid="loader"><div class="moon"></div><div class="earth"></div><div class="asteroid"></div><div class="asteroid-dust"></div></div></span></div><div class="close icon"></div></header><section><p>Each Glitch project runs inside its own virtual machine container
+</p><article><div class="status-item"><div class="status-summary"><div class="status-badge icon"><div class="status ok">CPU
+</div></div><progress class="progress-inline ok" max="100" value="0.3092153272616692"></progress></div><div class="status-details">0%</div><span class="loader-ellipses hidden"></span></div><p class="hidden">This may be caused by large or inefficient processes, libraries or compilers
+</p></article><article><div class="status-item"><div class="status-summary"><div class="status-badge icon"><div class="status ok">Memory
+</div></div><progress class="progress-inline ok" max="100" value="10.13336181640625"></progress></div><div class="status-details">10%, 52/512MB</div><span class="loader-ellipses hidden"></span></div><p class="hidden">Large or inefficient processes, libraries or compilers that use too much RAM may get killed
+</p></article><article><div class="status-item"><div class="status-summary"><div class="status-badge icon"><div class="status ok">Disk
+</div></div><progress class="progress-inline ok" max="100" value="0.8692276277245294"></progress></div><div class="status-details">1%, 2/194MB</div><span class="loader-ellipses hidden"></span></div><p class="hidden">You may have problems saving changes when your disk is full. Try removing unneeded files, and running
+<code>git prune; git gc</code><span> </span><span>from the Console
+</span></p></article><article><div class="status-item status-item-without-progress"><div class="status-summary"><div class="status-badge icon"><div class="status">Always On
+</div></div></div><div class="status-details">Disabled
+</div></div><p>To keep Glitch fast, projects sleep after 5 minutes if they are not used, and those running for more than 12 hours are stopped
+</p></article><article><p>In the future, you'll be able to upgrade resources and keep your app always on
+</p><p><a href="http://help-center.glitch.me/help/restrictions/">Details about Technical restrictions
+</a></p></article></section></footer><footer id="rewind-panel" class="rewind-panel panel hidden"><resizer></resizer><header><h1>Rewind
+</h1><div class="current-state-info"><div class="time-container"><div class="time">00:00:00</div><div class="labels"><div class="label">HR
+</div><div class="label">MIN
+</div><div class="label">SEC
+</div></div></div><div class="time-container hidden"><div class="time">00:00:00</div><div class="labels"><div class="label">MTH
+</div><div class="label day">DAY
+</div><div class="label">YR
+</div></div></div><div class="commit-message" title="––––"><span>––––</span><div class="loading-revision hidden"><span><div class="loader" data-testid="loader"><div class="moon"></div><div class="earth"></div><div class="asteroid"></div><div class="asteroid-dust"></div></div></span></div></div></div><div class="close icon"></div></header><section class="timeline"><div class="loading-rewinds hidden"><span><div class="loader" data-testid="loader"><div class="moon"></div><div class="earth"></div><div class="asteroid"></div><div class="asteroid-dust"></div></div></span></div><div class="rewind-graph"><div class="rewind-columns-container"><div class="rewind-column now"><div class="time cell"><span class="time-label">0
+</span></div><div class="cell-border"></div></div><playhead id="playhead"><div class="playhead-arrow icon"></div><div class="tail"></div></playhead></div></div><div class="instructions-container"><div class="instructions">Your timeline grows as you edit
+</div><div class="clock"></div></div></section></footer><div class="new-embed-helper hidden expanded"><div class="helper-icon"><a class="glitch-logo" href="https://glitch.com/~enthusiastic-guppy"></a></div><div class="helper-content-clip"><div class="helper-content"><a class="project-name" target="_parent" rel="noopener" href="https://glitch.com/~enthusiastic-guppy"><img class="project-avatar" src="./assets – enthusiastic-guppy_files/dd04c617-bbf6-44b5-a9ee-8b52fb5132be.png"><span>enthusiastic-guppy</span></a><span>by
+</span><div class="collaborators"><span class="hidden"><span><div class="loader" data-testid="loader"><div class="moon"></div><div class="earth"></div><div class="asteroid"></div><div class="asteroid-dust"></div></div></span></span><span class=""><a class="user" href="https://glitch.com/user/4434308" target="_parent" rel="noopener"><img class="helper-avatar"></a></span></div><div class="share-project"><button class="opens-pop-over "><span class="label">Share
+</span></button><dialog class="pop-over embed-share-pop hidden"><section class="info share-link-generator"><div class="button-wrap"><div class="segmented-buttons"><button class="active">Project Page
+</button><button class="">Live App
+</button><button class="">Code
+</button></div></div><p><span class=""><p class="hidden"><span class="private-icon is-private"></span><span>Only project members or teams can view
+</span></p><p><input class="share-link project-page-url" copyable="true" readonly="true" data-copy-url="https://glitch.com/~enthusiastic-guppy"><button class="button-copy" data-clipboard-text="https://glitch.com/~enthusiastic-guppy">copy
+</button></p></span><span class="hidden"><input class="share-link app-url" copyable="true" readonly="true" data-copy-url="https://enthusiastic-guppy.glitch.me"><button class="button-copy" data-clipboard-text="https://enthusiastic-guppy.glitch.me">copy
+</button></span><span class="hidden"><p class="hidden"><span class="private-icon is-private"></span><span>Only project members or teams can view
+</span></p><p class=""><span class="secrets-sidebar-icon"></span><span>Non-members won't be able to see your .env file secrets
+</span></p><p><span class="hidden"><span><div class="loader" data-testid="loader"><div class="moon"></div><div class="earth"></div><div class="asteroid"></div><div class="asteroid-dust"></div></div></span></span><span class=""><input class="share-link editor-url" copyable="true" readonly="true" data-copy-url="https://glitch.com/edit/#!/enthusiastic-guppy"><button class="button-copy" data-clipboard-text="https://glitch.com/edit/#!/enthusiastic-guppy">copy
+</button></span></p></span></p></section></dialog></div></div></div></div><div id="embed-helper" class="embed-helper hidden" style="bottom: 0px;"><div class="left-container"><a href="https://glitch.com/~enthusiastic-guppy"><img class="avatar project-avatar" src="./assets – enthusiastic-guppy_files/dd04c617-bbf6-44b5-a9ee-8b52fb5132be.png"><span class="hidden"><span><div class="loader" data-testid="loader"><div class="moon"></div><div class="earth"></div><div class="asteroid"></div><div class="asteroid-dust"></div></div></span></span><p class="embed-helper-label">enthusiastic-guppy</p></a><div class="segmented-buttons"><button class="active"><span>Code
+</span></button><button class=""><span>App
+</span></button></div></div><div class="right-container"><span class=""><p class="embed-helper-label">Made by
+</p><div class="person-wrap"><span class="person"><span><a href="https://glitch.com/user/4434308"><div class="avatar icon embed-helper-avatar anon-avatar" style="
+        background-color: #6ff783;
+      " data-tooltip="Anonymous" data-tooltip-embed-helper="true"></div></a></span></span></div></span><a href="https://glitch.com/edit/#!/enthusiastic-guppy"><button class="button-edit-in-glitch"><span class="glitch-logo emoji production"></span><span class="fullscreen-label">Edit</span><span class="fullscreen-label hidden">Show</span><span class="fullscreen icon"></span></button></a></div></div><div class="overlay-background hidden"><dialog class="overlay keyboard-shortcuts-overlay"><section class="info"><h1><span>Keyboard Shortcuts
+</span><span class="emoji musical-keyboard"></span></h1></section><section class="info"><h2>Global
+</h2><div class="shortcut">Show app:
+<div class="shortcuts"><div class="key all-shortcut">Ctrl–Shift–R
+</div></div></div><div class="shortcut">Project search:
+<div class="shortcuts"><div class="key all-shortcut">Ctrl–P
+</div><div class="key all-shortcut">Ctrl–K
+</div><div class="key-all-shortcut">CTRL–;
+</div></div></div><div class="shortcut">Sidebar toggle:
+<div class="shortcuts"><div class="key all-shortcut">Ctrl–I
+</div></div></div><div class="shortcut">App Preview toggle:
+<div class="shortcuts"><div class="key all-shortcut">Ctrl–Shift–U
+</div></div></div><div class="shortcut">Rewind toggle:
+<div class="shortcuts"><div class="key all-shortcut">Ctrl–Shift–M
+</div></div></div><div class="shortcut">Close dialog:
+<div class="shortcuts"><div class="key all-shortcut">ESC
+</div></div></div></section><section class="info"><h2>Advanced
+</h2><div class="shortcut">Export to GitHub:
+<div class="shortcuts"><div class="key all-shortcut">Ctrl–Shift–E
+</div></div></div><div class="shortcut">Status and Logs toggle:
+<div class="shortcuts"><div class="key all-shortcut">Ctrl–Shift–L
+</div></div></div><div class="shortcut">Open console:
+<div class="shortcuts"><div class="key all-shortcut">Ctrl–Shift–X
+</div></div></div></section><section class="info"><h2>Text Editing
+</h2><div class="shortcut">Find text:
+<div class="shortcuts"><div class="key all-shortcut">Ctrl–F
+</div></div></div><div class="shortcut">Find and replace:
+<div class="shortcuts"><div class="key all-shortcut">Ctrl–Alt–F
+</div></div></div><div class="shortcut">Jump to line:
+<div class="shortcuts"><div class="key all-shortcut">Ctrl–G
+</div></div></div><div class="shortcut">Search Files and replace:
+<div class="shortcuts"><div class="key all-shortcut">Ctrl–Shift–F
+</div></div></div></section><section class="info"><p>(Text editing shortcuts are mostly like Sublime Text)
+</p></section></dialog></div><div class="overlay-background hidden"><dialog class="overlay project-is-suspended-overlay overlay-narrow"><section class="danger-zone"><h1>enthusiastic-guppy has been suspended</h1></section><section class="actions"><p>Reason: </p><p>If your app isn't actually malicious, let us know to restore it
+</p><div class="button-wrap"><a href="https://support.glitch.com/"><button><span>Contact Support
+</span><div class="emoji ambulance"></div></button></a></div></section><section class="info"><div class="button-wrap"><button><span>New Project
+</span><div class="emoji sparkles"></div></button></div><div class="button-wrap"><a><button>Sign In
+</button></a></div><p>or
+<a href="https://glitch.com/edit/#">Sign up
+</a></p></section></dialog></div><div class="overlay-background hidden"><div class="overlay drag-to-upload"><p>Drop Files to Upload.
+</p><div class="emoji truck"></div></div></div><div class="overlay-background hidden"><dialog class="overlay new-stuff-overlay overlay-narrow"><section class="info"><figure class="new-stuff-cat"></figure><h1>New Stuff
+</h1><div class="button-wrap"><label class="button"><input type="checkbox"><span>Keep showing me these
+</span></label></div></section></dialog></div><div class="overlay-background hidden"><dialog class="overlay share-embed-overlay"><section class="info"><h1><span>Share Embed
+</span><span class="emoji bento"></span></h1></section><section class="info section-embed"><p>Change files and collapse sidebar to customize
+</p><div id="glitch-embed" class="glitch-embed-wrap" style="height: 420px; pointer-events: auto;"><iframe id="glitch-embed-iframe" class="glitch-embed-iframe" alt="code example in Glitch" src="./assets – enthusiastic-guppy_files/saved_resource(2).html" allow="geolocation; microphone; camera; midi; vr; encrypted-media" style="pointer-events: auto;"></iframe></div><div class="resizer-wrap"><resizer></resizer><div class="resize-arrow">↕
+</div></div><p class="hidden"><span class="private-icon"></span><span>Only project members will be able to view
+</span></p><div class="button-wrap"><div class="segmented-buttons"><button class="active">Code
+</button><button class="">App
+</button></div></div><div class="button-wrap"><label class="button" tabindex="0"><input class="pointer-events-none" type="checkbox" tabindex="-1"><span>Hide Attribution
+</span></label></div><div class="button-wrap"><div class="segmented-buttons"><button class="active">iframe
+</button><button class="">for Medium
+</button></div></div><div class="input-wrap"><textarea copyable="true" wrap="off"></textarea><button class="button-copy" data-clipboard-text="&lt;!-- Copy and Paste Me --&gt;
+&lt;div class=&quot;glitch-embed-wrap&quot; style=&quot;height: 420px; width: 100%;&quot;&gt;
+  &lt;iframe
+    allow=&quot;geolocation; microphone; camera; midi; vr; encrypted-media&quot;
+    src=&quot;undefined&quot;
+    alt=&quot;enthusiastic-guppy on Glitch&quot;
+    style=&quot;height: 100%; width: 100%; border: 0;&quot;&gt;
+  &lt;/iframe&gt;
+&lt;/div&gt;">copy
+</button></div><div class="input-wrap hidden"><textarea copyable="true" wrap="off"></textarea><button class="button-copy">copy
+</button></div></section></dialog></div><div class="overlay-background hidden"><dialog class="overlay project-search-files"><section class="actions"><form><div class="input-wrap"><input id="project-files-search" class="search-input" placeholder="search"></div><div class="input-wrap"><select class="search-input"><option value="All Files">All Files</option><option value="Current File – style.css">Current File – style.css</option><option value="Current Folder – ">Current Folder – </option><option value="Current Type – *.css">Current Type – *.css</option></select><div class="button-wrap search-option"><label class="button button-small button-secondary" data-tooltip="Case sensitive" tabindex="0"><input type="checkbox" tabindex="-1"><span>Aa
+</span></label></div></div><div class="button-wrap"><button><span>Search
+</span><span class="hidden"><span><div class="loader" data-testid="loader"><div class="moon"></div><div class="earth"></div><div class="asteroid"></div><div class="asteroid-dust"></div></div></span></span><div class="status-badge icon hidden"><div class="status warning"><span>0</span><div class="search-in-badge icon"></div></div></div></button></div></form></section><section class="info results-container hidden"></section><section class="info  hidden"><p>No Results for
+<span></span></p><div class="no-search-results-illustration"></div></section><section class="info "><p><span class="emoji musical-keyboard"></span><span> </span><span>Ctrl-Shift-F</span></p></section><section class="info hidden"><p>For security reasons, only project members can search files
+</p><button class="">Sign In
+</button></section></dialog></div><div class="overlay-background hidden"><dialog class="overlay error-overlay"><section class="danger-zone"><h1>Unexpected Error
+</h1></section><section class="info"><p>(シ_ _)シ
+</p><p>An error has occurred, please try again or
+<a href="https://support.glitch.com/">contact us</a><span> </span><span>if the error persists.
+</span></p><textarea copyable="true" wrap="off">
+        undefined: undefined
+
+        undefined
+
+        
+      </textarea></section><section class="actions"><div class="button-wrap"><a href="http://status.glitch.com/"><button><span>System Status
+</span><div class="emoji traffic-light"></div></button></a></div><div class="button-wrap"><button><span>Try Again
+</span><div class="emoji crystal-ball"></div></button></div></section><section class="info"><p><a href="https://support.glitch.com/">Support
+</a></p></section></dialog></div><dialog class="pop-over sign-in-pop hidden" style=""><section class="actions"><div class="button-wrap"><a><button id="button-facebook-sign-in">Sign in with Facebook
+<div class="emoji facebook"></div></button></a></div><div class="button-wrap"><a><button id="button-github-sign-in">Sign in with GitHub
+<div class="emoji octocat"></div></button></a></div><div class="button-wrap"><a><button id="button-google-sign-in">Sign in with Google
+<div class="emoji google"></div></button></a></div><div class="button-wrap"><button>Sign in with Email
+<div class="emoji email"></div></button></div></section><section class="info"><button>Use a sign in code
+</button></section></dialog><div class="emojiCache"><div class="icon ask-for-help"></div><div class="ask-for-help-hand"></div><div class="ask-for-help-face"></div><div class="emoji ambulance"></div><div class="emoji balloon"></div><div class="emoji bento"></div><div class="emoji bomb"></div><div class="emoji bouquet"></div><div class="emoji carp-streamer"></div><div class="emoji cat2"></div><div class="emoji chart-with-upwards-trend"></div><div class="emoji clap"></div><div class="emoji clock3"></div><div class="emoji construction-worker"></div><div class="emoji crescent-moon"></div><div class="emoji crystal-ball"></div><div class="emoji cyclone"></div><div class="emoji dancers"></div><div class="emoji email"></div><div class="emoji eyes"></div><div class="emoji eyeglasses"></div><div class="emoji female-technologist"></div><div class="emoji facebook"></div><div class="emoji ferris-wheel"></div><div class="emoji fire-engine"></div><div class="emoji framed-picture"></div><div class="emoji ghost"></div><div class="emoji hamburger"></div><div class="emoji heart-eyes"></div><div class="emoji hibiscus"></div><div class="emoji lady-beetle"></div><div class="emoji last-quarter-moon-with-face"></div><div class="emoji lock"></div><div class="emoji love-hotel"></div><div class="emoji microphone"></div><div class="emoji musical-keyboard"></div><div class="emoji newspaper"></div><div class="emoji octocat"></div><div class="emoji octagonal-sign"></div><div class="emoji facebook"></div><div class="emoji palm-tree"></div><div class="emoji love-letter"></div><div class="emoji microphone"></div><div class="emoji musical-keyboard"></div><div class="emoji octagonal-sign"></div><div class="emoji octocat"></div><div class="emoji pager"></div><div class="emoji palm-tree"></div><div class="emoji paperclip"></div><div class="emoji raised-hand"></div><div class="emoji raising-hand-woman"></div><div class="emoji rainbow"></div><div class="emoji repeat"></div><div class="emoji rewind"></div><div class="emoji rainbow"></div><div class="emoji raised-hand"></div><div class="emoji raising-hand-woman"></div><div class="emoji rose"></div><div class="emoji see-no-evil-monkey"></div><div class="emoji seedling"></div><div class="emoji selfie"></div><div class="emoji sparkles"></div><div class="emoji sparkling-heart"></div><div class="emoji splashing-sweat"></div><div class="emoji sunglasses"></div><div class="emoji sunny"></div><div class="emoji thumbsup"></div><div class="emoji tokyo-tower"></div><div class="emoji traffic-light"></div><div class="emoji truck"></div><div class="emoji turtle"></div><div class="emoji two"></div><div class="emoji two-women-holding-hands"></div><div class="emoji thumbsdown"></div><div class="emoji thumbsup"></div><div class="emoji tokyo-tower"></div><div class="emoji umbrella"></div><div class="emoji wave"></div><div class="emoji helmet-with-white-cross"></div></div></div>
+  <script src="./assets – enthusiastic-guppy_files/api.js.download"></script>
+
+
+</body></html>

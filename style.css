@@ -1,0 +1,91 @@
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/*----header css----*/
+.top-header {
+    background: #ffffff;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+.header-left-logo img {
+    max-width: 6vw;
+    margin-top: 10px;
+}
+h4.text-before {
+    font-size: 1.5rem;
+    padding: 26px 20px 0px 0px;
+    font-weight: 600;
+    color: #00000070;
+    text-align: right;
+}
+  .header-right-logo img {
+    width: 9vw;
+    height: 10vh;
+    object-fit: contain;
+}
+.header-right-logo {
+    display: flex;
+    float: right;
+}
+
+/*----site info css----*/
+.site-info-area {
+    text-align: center;
+    margin-top: 15%;
+}
+.logo-and-content img {
+    max-width: 13vw;
+    padding-top: 77px;
+}
+.pink-cover2 {
+    background: #f5dddae0;
+    height: 466px;
+    width: 500px;
+    margin-left: -23px;
+}
+.story-by-box {
+    border: 1px 0px 1px 0px solid black;
+    border-top: 1px solid #00000063;
+    border-bottom: 1px solid #00000063;
+    padding: 10px;
+    text-align: left;
+}
+
+/*---shop area css----*/
+.col-md-3.left-leaf img {
+    max-width: 15vw;
+}
+.container.shop-image img {
+    width: 100%;
+    object-fit: contain;
+    z-index: 2;
+}
+.container.shop-image {
+    overflow: hidden;
+}
+
+/*----comfort area css----*/
+.comfort-left-leaf {
+    background-image: url(https://cdn.glitch.com/29e315c4-d615-47e1-83f7-fcd54241d914%2F4fe2938a-963f-4754-a48c-0af2e2df417d%252Fleaf-middle-left.png?1541650464332);
+    height: 466px;
+    max-width: 500px;
+    background-repeat: no-repeat;
+    margin-top: 10%;
+}
+.pink-cover1 {
+    background: #f5ddda;
+}
+.pink-cover2 {
+    background: #f5dddae0;
+    height: 466px;
+    width: 500px;
+    margin-left: -23px;
+}
